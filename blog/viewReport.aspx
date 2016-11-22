@@ -7,7 +7,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h2>View sales:</h2>
     <div>
-        <h3>Latest:<asp:SqlDataSource ID="dropDownDataSourceLatest" runat="server" ConnectionString="<%$ ConnectionStrings:NetShopConnectionString %>" SelectCommand="SELECT [Days] FROM [Sale]"></asp:SqlDataSource>
+        <h3>View sales from:<asp:SqlDataSource ID="dropDownDataSourceLatest" runat="server" ConnectionString="<%$ ConnectionStrings:NetShopConnectionString %>" SelectCommand="SELECT [Days] FROM [Sale]"></asp:SqlDataSource>
         </h3>
 
     </div>
@@ -35,6 +35,17 @@
 
     <br /><br />
     <div>
+    
+          <asp:Label ID="Label1" runat="server" Text="From: "></asp:Label>
+          <asp:TextBox ID="fromD ate" runat="server"></asp:TextBox>
+      
+    
+            <asp:Label ID="Label2" runat="server" Text="   To:  "></asp:Label>
+            <asp:TextBox ID="ToDate" runat="server"></asp:TextBox>
 
+        <asp:Button ID="btn_Search" runat="server" Text="Search" />
     </div>
+    <asp:GridView ID="GridView1" runat="server">
+    </asp:GridView>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
 </asp:Content>
