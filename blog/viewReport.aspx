@@ -7,7 +7,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h2>View sales:</h2>
     <div>
-        <h3>View sales from:<asp:SqlDataSource ID="dropDownDataSourceLatest" runat="server" ConnectionString="<%$ ConnectionStrings:NetShopConnectionString %>" SelectCommand="SELECT [Days] FROM [Sale]"></asp:SqlDataSource>
+        <h3>View sales from:<asp:SqlDataSource ID="dropDownDataSourceLatest" runat="server" ConnectionString="<%$ ConnectionStrings:testConnectionString %>" SelectCommand="SELECT [Days] FROM [Sale]"></asp:SqlDataSource>
         </h3>
 
     </div>
@@ -27,7 +27,7 @@
             <asp:BoundField DataField="Comments" HeaderText="Comments" SortExpression="Comments" />
         </Fields>
     </asp:DetailsView>
-    <asp:SqlDataSource ID="DetailsDataSourceLatest" runat="server" ConnectionString="<%$ ConnectionStrings:NetShopConnectionString %>" SelectCommand="SELECT * FROM [Sale] WHERE ([Days] = @Days)">
+    <asp:SqlDataSource ID="DetailsDataSourceLatest" runat="server" ConnectionString="<%$ ConnectionStrings:testConnectionString %>" SelectCommand="SELECT * FROM [Sale] WHERE ([Days] = @Days)">
         <SelectParameters>
             <asp:ControlParameter ControlID="DropDownList1" DbType="Date" Name="Days" PropertyName="SelectedValue" />
         </SelectParameters>
