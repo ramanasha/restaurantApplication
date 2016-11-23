@@ -7,6 +7,7 @@ namespace blog
         protected void Page_Load(object sender, EventArgs e)
         {
             Session["UserName"] = null;
+            
             Response.Redirect("Default.aspx");
         }
     }

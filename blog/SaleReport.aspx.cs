@@ -10,7 +10,7 @@ namespace blog
     public partial class SaleReport : System.Web.UI.Page
     {
 
-         static string connString = ConfigurationManager.ConnectionStrings["NetShopConnectionString"].ConnectionString;
+         static string connString = ConfigurationManager.ConnectionStrings["testConnectionString"].ConnectionString;
         // made static to avoid error 
         static SqlConnection con = new SqlConnection(connString);
         

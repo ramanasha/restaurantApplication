@@ -37,7 +37,7 @@
     <div>
     
           <asp:Label ID="Label1" runat="server" Text="From: "></asp:Label>
-          <asp:TextBox ID="fromD ate" runat="server"></asp:TextBox>
+          <asp:TextBox ID="fromDate" runat="server"></asp:TextBox>
       
     
             <asp:Label ID="Label2" runat="server" Text="   To:  "></asp:Label>
