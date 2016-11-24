@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>weServe Oy</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
@@ -43,7 +43,7 @@
             <Items>
                 <asp:MenuItem Text="Submit sale report" Value="Page 1" NavigateUrl="~/SaleReport.aspx"></asp:MenuItem>
                 
-                <asp:MenuItem Text="View records" Value="View records" NavigateUrl="viewReport.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="View records" Value="View records" NavigateUrl="~/viewReport.aspx"></asp:MenuItem>
             </Items>
         </asp:Menu>
     </div>
