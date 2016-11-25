@@ -50,20 +50,20 @@
     <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>--%>
     <div>
         
-        <asp:TextBox ID="TextBox1" runat="server"  Text="" ></asp:TextBox>
+        <asp:TextBox ID="TextBox1" runat="server" placeholder="Select start date"  Text="" ></asp:TextBox>
 
         
-        <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
+        <asp:Button ID="Button1" runat="server" Text="Start Date" OnClick="Button1_Click" />
 
         
         <asp:Calendar ID="Calendar1" runat="server" Visible="False" OnSelectionChanged="Calendar1_SelectionChanged"></asp:Calendar>
 
         
 &nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="TextBox2" runat="server" Text=""></asp:TextBox>
+        <asp:TextBox ID="TextBox2" runat="server"   placeholder="Select end date" Text=""></asp:TextBox>
 
         
-            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Button" />
+            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="End Date" />
             <asp:Calendar ID="Calendar2" runat="server" OnSelectionChanged="Calendar2_SelectionChanged" Visible="False"></asp:Calendar>
 
         
