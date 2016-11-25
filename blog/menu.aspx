@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>weServe Oy</title>
+    <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
@@ -15,43 +15,54 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+     
+    <script type="text/javascript">
+     function submitFuction () {
+         window.location = "~/SaleReport.aspx";
+    };
+    document.getElementById("viewReport").onclick = function () {
+        location.href = "~/viewReport.aspx";
+    }
+</script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:Label ID="welcomeName" runat="server" Text="Welcome"></asp:Label>
-   <!--
-    <div>
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation"> 
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-
-                </button>
-            </div>
-        </div>
-    </div>
-    </div>
-    <div>
-        -->
-    <br /><br />
-    <div>
-        <asp:Menu ID="Menu1" runat="server" BorderStyle="Solid" BorderWidth="5px" Font-Bold="True" Font-Italic="False" Font-Size="XX-Large" ForeColor="Red">
-            <DynamicHoverStyle BackColor="#66FF33" />
-            <Items>
-                <asp:MenuItem Text="Submit sale report" Value="Page 1" NavigateUrl="~/SaleReport.aspx"></asp:MenuItem>
-                
-                <asp:MenuItem Text="View records" Value="View records" NavigateUrl="~/viewReport.aspx"></asp:MenuItem>
-            </Items>
-        </asp:Menu>
-    </div>
     
-    <br />
+    <div class="container-fluid">
+  <h3 class="text-primary text-center">  </h3>
+  <div class="row">
+    <div class="col-xs-6">
+      <div class="well">
+      <a href="SaleReport.aspx"> click here to submit sales report </a>
+          
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <div class="well">
+         
+          <a href="viewReport.aspx">click here to view sales report</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+    <div class="text-center well">
 
     <a href="Logout.aspx">
         <asp:Label ID="Label1" runat="server" Text="LogOut"></asp:Label></a>
+        </div>
 
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
