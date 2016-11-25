@@ -9,7 +9,11 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div>
+    <div class="container">
+  <div class="row">
+    <div class="col-lg-6 col-lg-offset-3">
+
+    <div class="well">
         <table>
             <tr>
                 <td>
@@ -123,4 +127,8 @@
 
         </table>
     </div>
+        </div>
+      </div>
+        </div>
+    
 </asp:Content>
