@@ -30,22 +30,38 @@
             color: white;
             font-weight: bold;
         }
+        /* css to have space between rows*/
+tr.spaceUnder > td
+{
+  padding-bottom: 1.5em;
+}
+
+/*css to make container full screen*/
+
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+}
+.container{
+ padding-top: 2em;
+}
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div class="container">
+    <div class="container container-full ">
+        <div id="full-screen-form">
         <div class="row">
             <div class="col-lg-6 col-lg-offset-3">
 
                 <div class="well">
                     <table>
-                        <tr>
+                        <tr class="spaceUnder" >
                             <td>
                                 <asp:Label ID="Label10" runat="server" Text="Date"></asp:Label></td>
                             <td class="auto-style1">
                                 <asp:TextBox ID="datepicker" runat="server"></asp:TextBox>
-                                <asp:ImageButton ID="ImageButton1" runat="server" Height="42px" ImageUrl="~/images/calendar-icon.png" OnClick="ImageButton1_Click" Width="38px" />
+                                <asp:ImageButton ID="ImageButton1" runat="server" Height="16px" ImageUrl="~/images/calendar-icon.png" OnClick="ImageButton1_Click" Width="16px" />
                             </td>
                             <td>
 
@@ -65,7 +81,7 @@
 
 
                         </tr>
-                        <tr>
+                        <tr class="spaceUnder">
                             <td>
                                 <asp:Label ID="Label1" runat="server" Text="Total sale"></asp:Label></td>
                             <td>
@@ -74,7 +90,7 @@
                             </td>
 
                         </tr>
-                        <tr>
+                        <tr class="spaceUnder">
                             <td>
                                 <asp:Label ID="Label2" runat="server" Text="Amount collected from card"></asp:Label>
                             </td>
@@ -83,7 +99,7 @@
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*" ControlToValidate="amountCard" Display="Dynamic" Font-Size="Large" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="spaceUnder">
                             <td>
                                 <asp:Label ID="Label3" runat="server" Text="Total lunch card collected"></asp:Label>
                             </td>
@@ -91,7 +107,7 @@
                                 <asp:TextBox ID="lunchCard" runat="server"></asp:TextBox>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="spaceUnder">
                             <td>
                                 <asp:Label ID="Label4" runat="server" Text="Total bill amount"></asp:Label>
                             </td>
@@ -99,7 +115,7 @@
                                 <asp:TextBox ID="billAmount" runat="server"></asp:TextBox>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="spaceUnder">
                             <td>
                                 <asp:Label ID="Label5" runat="server" Text="Bill to be payed by the customer"></asp:Label>
                             </td>
@@ -107,7 +123,7 @@
                                 <asp:TextBox ID="customerBillAmount" runat="server"></asp:TextBox>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="spaceUnder">
                             <td>
                                 <asp:Label ID="Label6" runat="server" Text="Cash amount"></asp:Label>
                             </td>
@@ -116,7 +132,7 @@
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*" ControlToValidate="amountCash" Display="Dynamic" Font-Size="Large" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="spaceUnder">
                             <td>
                                 <asp:Label ID="Label7" runat="server" Text="Cash Collected from today"></asp:Label>
                             </td>
@@ -125,7 +141,7 @@
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="*" ControlToValidate="cashCollected" Display="Dynamic" Font-Size="Large" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="spaceUnder">
                             <td>
                                 <asp:Label ID="Label8" runat="server" Text="Cash left in cash counter"></asp:Label>
                             </td>
@@ -134,7 +150,7 @@
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="*" ControlToValidate="cashCounter" Display="Dynamic" Font-Size="Large" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="spaceUnder">
                             <td>
                                 <asp:Label ID="Label9" runat="server" Text="Comments"></asp:Label>
                             </td>
@@ -144,12 +160,16 @@
                             </td>
 
                         </tr>
-
-                        <tr>
+                   
+                        <tr class="spaceUnder">
                             <td>
                                 <a href="Logout.aspx" class="btn btn-danger" role="button">Logout <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span></a>
                             </td>
+                           
                             <td>
+                                <a href="viewReport.aspx" class="btn btn-info" role="button">View Report <span class="glyphicon glyphicon-open-file" aria-hidden="true"></span></a>
+                            </td>
+                             <td>
                                 <asp:LinkButton ID="confirm" CssClass="btn btn-success" runat="server" OnClick="confirm_Click"> Submit <span class="glyphicon glyphicon-send"/></asp:LinkButton>
 
 
@@ -161,5 +181,5 @@
             </div>
         </div>
     </div>
-
+        </div>
 </asp:Content>

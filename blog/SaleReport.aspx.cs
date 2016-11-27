@@ -37,8 +37,8 @@ namespace blog
                 cmd.ExecuteNonQuery();
                 con.Close();
 
-                 Response.Write("The report was submitted. Thank you");
-
+            Response.Write("<script language=javascript>alert('Report was submitted. Thank you!');</script>");
+            Response.Redirect("menu.aspx");
         }
 
         protected void Calendar1_SelectionChanged(object sender, EventArgs e)
