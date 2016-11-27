@@ -22,12 +22,10 @@
        
         
     </style> -->
-
     <style>
         body {
-            background: url(http://mymaplist.com/img/parallax/pinlayer1.png) no-repeat center center fixed;
             background-color: #444;
-            background: url(https://wallpaperscraft.com/image/desk_restaurant_wine_glasses_plates_flowers_roses_80713_1920x1080.jpg) no-repeat center center fixed;
+            background: url(https://scontent-arn2-1.xx.fbcdn.net/t31.0-8/10465449_1468320010091474_7742841275273353814_o.jpg) no-repeat center center fixed;
             -webkit-background-size: 100% 100%;
             -moz-background-size: 100% 100%;
             -o-background-size: 100% 100%;
@@ -54,42 +52,40 @@
 
     <!--creating a container -->
     <div class="container">
-    <div class="row vertical-offset-100">
-        <div class="col-md-4 col-md-offset-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3>Please log in </h3>
-                    <!--creating table -->
-                    <table id="white" class="table table-condensed">
+        <div class="row vertical-offset-100">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="text-center">Sign in</h3>
+                   
+                        <!--creating table -->
+                        <table id="white" class="table table-condensed table-responsive">
+                            <tr>
+                                <td>
+                                    <asp:Label ID="label1" runat="server" Text="Username "></asp:Label></td>
+                                <td>
+                                    <asp:TextBox ID="username" runat="server"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="username" ErrorMessage="Username cannot be empty"></asp:RequiredFieldValidator>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <asp:Label ID="label2" runat="server" Text="Password "></asp:Label></td>
+                                <td>
+                                    <asp:TextBox ID="password" runat="server" TextMode="Password"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="password" ErrorMessage="Password cannot be empty"></asp:RequiredFieldValidator>
+                                </td>
+                            </tr>
+                        </table>
 
-
-
-                        <tr>
-                            <td>
-                                <asp:Label ID="label1" runat="server" Text="User Name"></asp:Label></td>
-                            <td>
-                                <asp:TextBox ID="username" runat="server"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="username" ErrorMessage="Username cannot be empty"></asp:RequiredFieldValidator>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <asp:Label ID="label2" runat="server" Text="Password"></asp:Label></td>
-                            <td>
-                                <asp:TextBox ID="password" runat="server" TextMode="Password"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="password" ErrorMessage="Password cannot be empty"></asp:RequiredFieldValidator>
-                            </td>
-                        </tr>
-                    </table>
-
-                    <div class="col-md-6 text-center">
-                        <asp:Button Class="btn btn-block btn-primary center-block" ID="loginButton" runat="server" OnClick="loginButton_Click" Text="Login" />
+                        <div class="col-md-6 text-center">
+                            <asp:Button Class="btn btn-block btn-primary center-block" ID="loginButton" runat="server" OnClick="loginButton_Click" Text="Login" />
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div>
+            <div>
+            </div>
         </div>
     </div>
-        </div>
 </asp:Content>

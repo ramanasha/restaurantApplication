@@ -39,7 +39,8 @@ namespace blog
             }
             else
             {
-                Response.Write("Please enter valid username and password");
+                Response.Write("<script language=javascript>alert('Username and password do not match');</script>");
+               
             }
 
             con.Close();
