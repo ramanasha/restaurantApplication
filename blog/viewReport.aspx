@@ -98,8 +98,8 @@
             <div>
 
 
-                <div style="overflow: auto; width: 800px; max-height: 200px;">
-                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" CssClass="dataTable" ShowHeaderWhenEmpty="True" Style="overflow: auto; width: 800px; max-height: 200px;">
+                <div style="overflow: auto; width: auto; max-height: 400px;">
+                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" CssClass="dataTable" ShowHeaderWhenEmpty="True" Style="overflow: auto; width: auto; max-height: 400px;">
                         <Columns>
                             <asp:BoundField DataField="Days" HeaderText="Days" SortExpression="Days" />
                             <asp:BoundField DataField="TotalSale" HeaderText="TotalSale" SortExpression="TotalSale" />
