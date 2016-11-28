@@ -46,14 +46,14 @@
             width: 100%;
         }
 
-        .container {
+        .container-fluid {
             padding-top: 2em;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div class="container container-full ">
+    <div class="container-fluid container-full ">
         <div id="full-screen-form">
             <div class="row">
                 <div class="col-lg-6 col-lg-offset-3">
